@@ -1,0 +1,77 @@
+/*
+=============================================
+                reset css
+=============================================
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+ 
+}
+
+
+  button{
+      color: inherit;
+      background-color: transparent;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/*body {
+  background-color: #070708;
+}*/
+button {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+/*
+=============================================
+                portfolio page
+=============================================
+*/
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+/*
+.test {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1c1c21;
+}
+.test::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(to bottom, #2f2f37, #2f2f3700);
+  z-index: 1;
+  border-radius: 50%;
+}
+*/
