@@ -105,23 +105,65 @@
         <section class="gallery-1">
             <div class="gallery">
                 <div class="gallery-blue">
-                  <img src="./imege/Image.1.svg" alt=""></div>
-                <div class="gallery-red">
-                  <img src="./imege/Image.2.svg" alt=""></div>
-                <div class="gallery-yelloy">
-                  <img src="./imege/Image.5.svg" alt=""></div>
-                <div class="gallery-while">
-                  <img src="./imege/Image.6.svg" alt=""></div>
-                <div class="gallery-blak">
-                  <img src="./imege/Image.7.svg" alt=""></div>
-                <div class="gallery-brayne">
-                  <img src="./imege/Image.8.svg" alt=""></div>
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.blue.avif 1x, ./imege/Carts.blue.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.blue.webp 1px, ./imege/Carts.blue.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.blue.jpg" srcset="./imege/Carts.blue.2x.jpg 2x" alt="">
+                  </picture></div>
+                <div class="gallery-orrange">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.orange.avif 1x, ./imege/Carts.orange.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.orange.webp 1px, ./imege/Carts.orange.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.orange.jpg" srcset="./imege/Carts.orange.2x.jpg 2x" alt="">
+                  </picture></div>
+                <div class="gallery-yellow">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.yellow.avif 1x, ./imege/carts.yellow.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.yellow.webp 1px, ./imege/carts.yellow.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.yellow.jpg" srcset="./imege/carts.yellow.2x.jpg 2x" alt="">
+                  </picture></div>
+                <div class="gallery-puple">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.puple.avif 1x, ./imege/Carts.pupil.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.puple.webp 1px, ./imege/Carts.pupil.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.puple.jpg" srcset="./imege/Carts.pupil.2x.jpg 2x" alt="">
+                  </picture></div>
+                <div class="gallery-green">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.green.avif 1x, ./imege/Carts.green.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.green.webp 1px, ./imege/Carts.green.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.green.jpg" srcset="./imege/Carts.green.2x.jpg 2x" alt="">
+                  </picture></div>
+                <div class="gallery-black">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Carts.black.avif 1x, ./imege/Carts.black.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Carts.black.webp 1px, ./imege/Carts.black.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Carts.black.jpg" srcset="./imege/Carts.black.2x.jpg 2x" alt="">
+                  </picture></div>
             </div>
         </section>
         <section class="Info">
             <div class="container-info">
                 <div class="photo-section">
-                    <img src="./imege/Image.jpg" alt="">
+                  <picture class="picture-img">
+                    <source media="(min-width:390)" srcset="./imege/Image.avif 1x, ./imege/Image.2x.avif 2x"
+                     type="imege/avif">
+                     <source media="(min-width:390)" srcset="./imege/Image.webp 1px, ./imege/Image.2x.webp 2x"
+                      type="imege/webp">
+                     <img src="./imege/Image.jpg" srcset="./imege/Image.2x.jpg 2x" alt="">
+                  </picture>
                 </div>
                 <div class="about">
                     <p class="text">ABOUT</p>
@@ -179,13 +221,25 @@
                 <p class="services-text">Services</p>
                 <h2 class="Services-title">MY PHOTOGRAPHY SERVICES</h2>
                 <div class="button-container">
-                    <a href="#"><img src="./imege/Icon.str.svg" alt=""></a>
-                    <a href="#"><img src="./imege/Icon.stl.svg" alt=""></a>
+                  <button class="btn">
+                    <svg class="icon-brands">
+                      <use href="./imege/img/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="btn">
+                    <svg class="icon-brands">
+                      <use href="./imege/img/sprite.svg#icon-arrow_right"></use>
+                    </svg>
+                  </button>
                     <a href="#">View All Services →</a>
                 </div>
                 <div class="event">
                     <h2 class="event-title">EVENTS</h2>
-                    <a href="#"><img src="./imege/Button.svg" alt=""></a>
+                    <svg class="footer-link-img">
+                      <use
+                        href="./imege/img/sprite.svg##icon-Vector-431-Stroke"
+                      ></use>
+                    </svg>
                     <p class="event-text">
                         Our event photography service is dedicated to capturing the magic of your special
                         occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to
@@ -224,15 +278,29 @@
                 <h1 class="Portfolio-title">EXPLORE MY PHOTOGRAPHY WORK.</h1>
 
                 <div class="Portfolio-button">
-                    <a href="#"><img src="./imege/Icon.str.svg" alt=""></a>
-                    <a href="#"><img src="./imege/Icon.stl.svg" alt=""></a>
+                  <button class="btn">
+                    <svg class="icon-brands">
+                      <use href="./imege/img/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="btn">
+                    <svg class="icon-brands">
+                      <use href="./imege/img/sprite.svg#icon-arrow_right"></use>
+                    </svg>
+                  </button>
                     <a href="#">View All Works →</a>
                 </div>
 
                 <div class="Portfolio-imge">
                     <ul class="Portfolio-imge-list">
                         <li class="Portfolio-imge-list-item">
-                            <img src="./imege/Image.ch1.jpg" alt="">
+                          <picture class="picture-img">
+                            <source media="(min-width:390)" srcset="./imege/Image.ch1.avif 1x, ./imege/Image.ch1.2.avif 2x"
+                             type="imege/avif">
+                             <source media="(min-width:390)" srcset="./imege/Image.ch1.webp 1px, ./imege/Image.ch1.2.webp 2x"
+                              type="imege/webp">
+                             <img src="./imege/Image.ch1.jpg" srcset="./imege/Image.ch1.2.jpg 2x" alt="">
+                          </picture>
                             <h6 class="Portfolio-imge-list-item-title">Faces of Resilience</h6>
                             <p class="Portfolio-imge-list-item-title-text">March 2022</p>
                             <button class="button-card">
@@ -241,7 +309,13 @@
                             </button>
                         </li>
                         <li class="Portfolio-imge-list-item">
-                            <img src="./imege/Image.ch2.jpg" alt="">
+                          <picture class="picture-img">
+                            <source media="(min-width:390)" srcset="./imege/Image.ch2.avif 1x, ./imege/Image.ch2.2.avif 2x"
+                             type="imege/avif">
+                             <source media="(min-width:390)" srcset="./imege/Image.ch2.webp 1px, ./imege/Image.ch2.2.webp 2x"
+                              type="imege/webp">
+                             <img src="./imege/Image.ch2.jpg" srcset="./imege/Image.ch2.2.jpg 2x" alt="">
+                          </picture>
                             <h6 class="Portfolio-imge-list-item-title">A Wedding Tale</h6>
                             <p class="Portfolio-imge-list-item-title-text">January 2020</p>
                             <button class="button-card">
@@ -250,7 +324,13 @@
                             </button>
                         </li>
                         <li class="Portfolio-imge-list-item">
-                            <img src="./imege/Image.ch3.jpg" alt="">
+                            <picture class="picture-img">
+                              <source media="(min-width:390)" srcset="./imege/Image.ch3.avif 1x, ./imege/Image.ch3.2.avif 2x"
+                               type="imege/avif">
+                               <source media="(min-width:390)" srcset="./imege/Image.ch3.webp 1px, ./imege/Image.ch3.2.webp 2x"
+                                type="imege/webp">
+                               <img src="./imege/Image.ch3.jpg" srcset="./imege/Image.ch3.2.jpg 2x" alt="">
+                            </picture>
                             <h6 class="Portfolio-imge-list-item-title">Product Elegance</h6>
                             <p class="Portfolio-imge-list-item-title-text">January 2020</p>
                             <button class="button-card">
