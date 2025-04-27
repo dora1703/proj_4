@@ -1,0 +1,67 @@
+
+body{
+    background-color: #1C1C21;
+}
+img, svg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    border-radius: 0;
+    border: 1px solid #28282b;
+    border-top: none;
+}
+.container {
+    margin: 0 auto;
+ width: 390px;
+
+}
+.header-container {
+    display: flex;
+    padding: 40px 0px 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #28282b;
+ border-top: none;
+}
+.logo{
+    width: 89.4px;
+height: 18px;
+}
+.header-link {
+}
+.header-nav {
+    display: none;
+}
+.header-nav-list {
+ 
+}
+.header-nav-list-item {
+}
+.header-nav-list-item-link {
+}
+.active {
+}
+.button {
+}
+.button-link {
+    display: none;
+}
+.header-burger {
+    width: 68px;
+    height: 68px;
+    display: flex;
+padding: 20px;
+border-radius: 20px 0px 0px 0px;
+border: 1px solid  #28282b;
+background-color: #1C1C21;
+cursor: pointer;
+
+}
+.header-burger-icon {
+ width: 28px;
+ height: 28px;
+}
+
