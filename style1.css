@@ -101,10 +101,12 @@ cursor: pointer;
   }
   
   .gallery-1 img {
+       
     display: block;
     width: 100%;
     height: auto;
     border-radius: 12px; 
     object-fit: cover;
     transition: transform 0.3s, box-shadow 0.3s;
+
   }
