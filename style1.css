@@ -65,3 +65,46 @@ cursor: pointer;
  height: 28px;
 }
 
+
+.HERO {
+}
+.subtext {
+}
+.container-bravn {
+}
+.work {
+}
+.container-categories {
+}
+.icon-list {
+}
+.icon-list-item {
+}
+.icon-list-item-img {
+}
+.icon-list-item-text {
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .gallery-1 > div {
+    flex: 1 1 calc(33.333% - 32px); 
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .gallery-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px; 
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
