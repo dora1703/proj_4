@@ -2,6 +2,7 @@
 body{
     background-color: #1C1C21;
     margin: 0;
+
 }
 img, svg{
     display: block;
@@ -43,8 +44,7 @@ height: 18px;
 }
 .header-nav-list-item-link {
 }
-.active {
-}
+
 .button {
 }
 .button-link {
@@ -68,22 +68,23 @@ cursor: pointer;
 
 
 .HERO {
-
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
 }
 .herop{
    
     display: flex;
-padding: 40px 16px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 20px;
-align-self: stretch;
+    width: 390px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 16px;
 }
 .herop-title{
-
-    align-self: stretch;
-    letter-spacing: 2px;
     color: #E4E4E6;
 font-family: Manrope;
 font-size: 40px;
@@ -117,22 +118,53 @@ text-transform: uppercase;
     cursor: pointer;
 }
 .container-bravn-bb{
-   width: 20px;
-height: 20px;
+ 
 }
 .container-bravn {
+    padding-top: 20px;
+    display: flex;
+align-items: center;
+}
+.work-together{
+    color:  #FFF;
+font-size: 28px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .work {
+    color: #FFF;
+font-family: Manrope;
+font-size: 28px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .container-categories {
+
 }
 .icon-list {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 }
 .icon-list-item {
+    display: flex;
+align-items: center;
+gap: 6px;
 }
 .icon-list-item-img {
+    width: 30px;
+height: 30px;
 }
 .icon-list-item-text {
+    color:  #D6D0FB;
+font-family: Manrope;
+font-size: 14px;
+
+line-height: 21px; 
+text-transform: uppercase;
 }
 
 
