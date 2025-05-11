@@ -13,8 +13,7 @@ img, svg{
 }
 
 .header {
-    border-radius: 0;
-    border-width: 1px solid  #1C1C21;
+
 
 }
 .container {
@@ -163,7 +162,7 @@ gap: 10px;
     color:  #FFF;
     font-size: 18px;
     font-weight: 500;
-    line-height: 21px; /* 27px */
+    line-height: 27px; /* 27px */
   }
 }
 
