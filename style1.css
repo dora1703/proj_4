@@ -20,7 +20,6 @@ img, svg{
   border-bottom: 1px solid  #1C1C21;
 }
 .container {
-  padding-top: 40px;
   min-width: 320px;
   max-width: 390px;
   padding: 0 16px;
@@ -31,7 +30,9 @@ img, svg{
     padding: 40px 0px 0px 16px;
     justify-content: space-between;
     align-items: center;
-   
+  
+border-left: 1px solid var(--Dark-12, #1C1C21);
+
 }
 .logo{
     width: 89.4px;
@@ -651,8 +652,9 @@ font-weight: 500;
     line-height:  21px ;
 }
 .photo-section{
-    height: 375px;
-align-self: stretch;
+   width: 358px;
+height: 375px;
+
 }
 .items {
     color: #FFF;
@@ -674,8 +676,6 @@ text-transform: uppercase;
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
-    border-radius: 16px;
-border: 1px solid  #1C1C21;
 }
 .INFORMATION{
     display: flex;
@@ -683,7 +683,14 @@ flex-direction: column;
 align-items: flex-start;
 align-self: stretch;
 border-radius: 16px;
-border: 1px solid  #242426;
+}
+.soc-info-container{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+border-radius: 16px;
+border: 1px solid var(--Dark-12, #1C1C21);
 }
 .contact-info {
     display: flex;
@@ -692,7 +699,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 20px;
 align-self: stretch;
-border-radius: 16px;
+border-radius: 0;
 border-top: 1px solid  #262628;
 }
 .contact-info-container{
@@ -712,6 +719,12 @@ font-weight: 500;
 height: 24px;
 }
 .contact-info-soclink-list-container{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
 }
 .email {
     color:  #E4E4E6;
@@ -778,32 +791,33 @@ background:  #1C1C21;
     width: 16px;
 height: 16px;
 }
-.buttons-container {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch;
+.buttonst-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
 }
 .buttons-1 {
-    display: flex;
-    padding: 14px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 8px;
-border: 1px solid #2F2F37;
-background:  #1C1C21;
+ display: flex;
+padding: 14px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #2F2F37;
+  background: var(--Dark-12, #1C1C21);
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
 }
 
-.title{
-    color: #FFF;
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px ;
+.title-buttonst{
+   color: var(--Absolute-White, #FFF);
+font-size: 14px;
+font-weight: 500;
+line-height: 21px; /* 21px */
 }
 @media (min-width:1440px){
   .Info {
@@ -881,7 +895,7 @@ gap: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+   border: none;
 }
 .ben {
    display: flex;
@@ -907,7 +921,7 @@ font-weight: 500;
   border-radius: 20px;
   border: 1px solid var(--Dark-12, #1C1C21);
   box-sizing: border-box;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 .information-text {
   align-self: stretch;
@@ -987,28 +1001,32 @@ gap: 16px;
 }
 .contact-info-soclink-list-container {
 display: flex;
-align-items: center;
-gap: 50px;
-align-self: stretch;
+  flex-direction: row; /* по горизонтали */
+  align-items: center;
+  gap: 50px;
 }
 .contact-info-soclink-list {
-  display: flex;
-padding: 8px;
-justify-content: flex-end;
-align-items: center;
-gap: 10px;
-border-radius: 100px;
-border: 1px solid var(--Dark-12, #1C1C21);
-background: var(--Dark-03, #070708);
+ display: flex;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid var(--Dark-12, #1C1C21);
+  background: var(--Dark-03, #070708);
+  list-style: none;
+  margin: 0;
 }
 .contact-info-soclink-list-item {
-  display: flex;
-padding: 12px;
-align-items: center;
-gap: 10px;
-border-radius: 100px;
-border: 1px solid #2F2F37;
-background: var(--Dark-12, #1C1C21);
+ display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #2F2F37;
+  background: var(--Dark-12, #1C1C21)
 }
 .info-soclink {
   
@@ -1020,24 +1038,27 @@ background: var(--Dark-12, #1C1C21);
 .soclink {
 }
 .buttonst-container{
-  display: flex; 
-  justify-content: center;
+ display: flex;
+  flex-direction: row; 
   align-items: center;
-  gap: 16px;
-  padding: 14px 24px;
-  flex-wrap: wrap;
+  gap: 20px;
+   
 }
 .buttons-1 {
-   display: flex; 
+ display: flex;
+ padding: 14px 24px;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid #2F2F37;
-  background: var(--Dark-12, #1C1C21);
+  width: 174px;   
+  height: 49px; 
+  gap: 10px;
+ border-radius: 8px;
+border: 1px solid #2F2F37;
+background: var(--Dark-12, #1C1C21);
   cursor: pointer;
   font-size: 14px;
   transition: background 0.3s;
+  white-space: nowrap;
 }
 .title-buttonst {
 color: var(--Absolute-White, #FFF);
@@ -1049,14 +1070,34 @@ color: var(--Absolute-White, #FFF);
 }
 @media (min-width:1920px){
 .Info {
+  
 }
 .container-info {
+  height: 710px;
+  display: flex;
+width: 1596px;
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
 }
 .about {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+flex: 1 ;
 }
 .text {
+  color: var(--Grey-50, #797C86);
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .items {
+  color: var(--Absolute-White, #FFF);
+font-size: 58px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .about-btnn {
   display: flex;
@@ -1076,52 +1117,171 @@ font-weight: 500;
 line-height: 27px; /* 27px */
 }
 .INFORMATION {
+ 
 }
 .photo-section {
+width: 100%;
+  
 }
 .information {
+
 }
 .ben {
+  display: flex;
+align-items: flex-end;
+gap: 10px;
+align-self: stretch;
+
+}
+.soc-info-container{
+display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 585px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--Dark-12, #1C1C21);
+  box-sizing: border-box;
 }
 .icon-information {
+  width: 39px;
+height: 40px;
 }
 .information-title {
+  color: var(--Grey-80, #CACACE);
+ 
+font-size: 30px;
+ 
+font-weight: 500;
+ 
 }
 .information-text {
+  color: var(--Grey-70, #AFB0B6);
+font-size: 18px;
+line-height: 27px; /* 27px */
 }
 .contact-info {
+ 
 }
 .contact-info-container {
+ 
 }
 .icon-contact {
+  width: 39px;
+height: 40px;
 }
 .contact-info-title {
+  color: var(--Grey-80, #CACACE);
+ 
+font-size: 30px; 
+font-weight: 500; 
+}
+.link{
+  display: flex;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
 }
 .email {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex: 1;
 }
 .email-t {
+ color: var(--Grey-90, #E4E4E6);
+ 
+font-size: 18px;
+font-weight: 500;
+line-height: 27px; /* 27px */
+}
+.email-t-l{
+  color: var(--Grey-70, #AFB0B6);
+font-size: 20px;
+line-height: 30px; /* 30px */
 }
 .number-phome {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex: 1 ;
 }
 .Phone {
+  color: var(--Grey-90, #E4E4E6);
+
+font-size: 18px;
+font-weight: 500;
+line-height: 27px; /* 27px */
 }
 .contact-info-soclink-list-container {
+display: flex;
+  flex-direction: row; /* по горизонтали */
+  align-items: center;
+  gap: 50px;
 }
 .contact-info-soclink-list {
+ display: flex;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid var(--Dark-12, #1C1C21);
+  background: var(--Dark-03, #070708);
+  list-style: none;
+  margin: 0;
 }
 .contact-info-soclink-list-item {
+ display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #2F2F37;
+  background: var(--Dark-12, #1C1C21)
 }
 .info-soclink {
+  
 }
 .icon-soclink {
+  width: 16px;
+  height: 16px;
 }
 .soclink {
 }
-.buttons-container {
+.buttonst-container{
+ display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 20px;
+   
 }
 .buttons-1 {
+ display: flex;
+ padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  width: 174px;   
+  height: 49px; 
+  gap: 10px;
+ border-radius: 8px;
+border: 1px solid #2F2F37;
+background: var(--Dark-12, #1C1C21);
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  white-space: nowrap;
 }
-.title {
+.title-buttonst {
+color: var(--Absolute-White, #FFF);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 0;
 }
 }
 
