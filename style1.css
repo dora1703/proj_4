@@ -1,19 +1,5 @@
 
-body{
-    background-color: #070708;
-    margin: 0 auto;
-    font-family: 'Manrope', sans-serif;
-                                                
 
-}
-main{
- gap: 150px;
-}
-img, svg{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .header {
 
