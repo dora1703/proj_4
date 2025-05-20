@@ -23,6 +23,10 @@ img, svg{
         text-decoration: none;
     }
     button{
+         font: inherit;
+
+  background: none;
+  border: none;
         color: inherit;
         background-color: transparent;
     }
