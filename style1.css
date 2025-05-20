@@ -7,7 +7,7 @@ body{
 
 }
 main{
-  padding: 80px;
+ gap: 150px;
 }
 img, svg{
     display: block;
@@ -218,10 +218,12 @@ gap: 10px;
  
 }
 .hero-container{
+  padding-top: 150px;
    display: flex;
 width: 390px;
 flex-direction: column;
 align-items: flex-start;
+margin: auto;
 }
 .herop{
     display: flex;
@@ -507,7 +509,6 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 gap: 10px;
-
   }
   .subtext {
      color: var(--Grey-40, #62646C);
@@ -585,14 +586,13 @@ align-self: stretch;
  
 }
 .Info {
-    padding-top: 40px;
-    display: flex;
-width: 358px;
-flex-direction: column;
-align-items: flex-start;
+   
+ 
 
 }
 .container-info {
+  margin: 0 auto;
+   padding-top: 80px;
     display: flex;
 width: 358px;
 flex-direction: column;
@@ -829,10 +829,10 @@ line-height: 21px; /* 21px */
 }
 .about {
 display: flex;
-padding-left: 0;
 padding-bottom: 40px;
 gap: 20px;
 align-self: stretch;
+border-bottom: 1px solid var(--Dark-12, #1C1C21);
 }
 
 
@@ -931,10 +931,8 @@ font-weight: 400;
 line-height: 24px; /* 24px */
 }
 .contact-info {
-  width: 630px;
   height: 266px;
   display: flex;
-padding: 30px;
 flex-direction: column;
 align-items: flex-start;
 gap: 30px;
@@ -1001,11 +999,9 @@ gap: 16px;
 }
 .contact-info-soclink-list-container {
 display: flex;
-  flex-direction: row; /* по горизонтали */
+  flex-direction: row;
   align-items: center;
 
-gap: 10px;
-  gap: 50px;
 }
 .contact-info-soclink-list {
 display: flex;
@@ -1047,10 +1043,11 @@ background: var(--Dark-12, #1C1C21);
  display: flex;
  padding: 14px 24px;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   width: 174px;   
-  height: 49px; 
+  height: 49px;  
   gap: 10px;
+  font: 1 0 0;
  border-radius: 8px;
 border: 1px solid #2F2F37;
 background: var(--Dark-12, #1C1C21);
@@ -1122,14 +1119,16 @@ line-height: 27px; /* 27px */
  
 }
 .photo-section {
-width: 100%;
-  
+height: 710px;
+flex: 1 0 0;
+
 }
 .information {
 display: flex;
-flex-direction: column;
-gap: 20px;
-align-self: stretch;
+ flex-direction: column;
+ gap: 16px;
+ border: none;
+ border-bottom: 1px solid var(--Dark-12, #1C1C21);;
 }
 .ben {
   display: flex;
@@ -1166,12 +1165,13 @@ font-size: 18px;
 line-height: 27px; /* 27px */
 }
 .contact-info {
-display: flex;
-
-flex-direction: column;
-align-items: flex-start;
-gap: 40px;
-align-self: stretch;
+width: 703px;
+        height: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
 }
 .contact-info-container {
  display: flex;
@@ -1274,8 +1274,8 @@ background: var(--Dark-12, #1C1C21);
  padding: 14px 24px;
   justify-content: center;
   align-items: center;
-  width: 174px;   
-  height: 49px; 
+  width: 214px;   
+  height: 63px; 
   gap: 10px;
  border-radius: 8px;
 border: 1px solid #2F2F37;
@@ -1298,11 +1298,13 @@ color: var(--Absolute-White, #FFF);
   
 }
 .container-services {
+  padding-top: 80px;
     display: flex;
     width: 358px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+    margin: 0 auto;
 }
 .container-services-capital{
   display: flex;
@@ -1518,8 +1520,16 @@ border: 1px solid var(--Dark-12, #1C1C21);
 background: var(--Dark-03, #070708);
 }
 .services-text {
+  color: var(--Grey-50, #797C86);
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .Services-title {
+  color: var(--Absolute-White, #FFF);
+font-size: 48px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .bnyg {
   display: flex;
@@ -1782,11 +1792,11 @@ text-transform: uppercase;
 .Portfolio {
 }
 .Portfolio-container {
-    width: 100%;
-  max-width: 1440px; /* или 1000px */
+   padding-top: 80px;
+    width: 358px;
+  max-width: 1440px; 
   margin: 0 auto;
   min-width: 390px;
-  padding: 0 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1858,10 +1868,10 @@ align-self: stretch;
 }
 .Portfolio-imge-list-item:first-child {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 19px;
-flex: 1 ;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  flex: 1 0 0;
 }
 .Portfolio-img-ch {
 align-self: stretch;
@@ -1940,29 +1950,118 @@ height: 28px;}
 @media (min-width:1440px){
 .Portfolio {
 }
-.Portfolio-container {
+.Portfolio-container { 
+ display: flex;
+width: 100%;
+flex-direction: column;
+align-items: flex-start;
+gap: 60px;
 }
 .Portfolio-container-t-b {
+     
+}
+.Portfolio-container-text-buutons{
+  display: flex;
+padding-bottom: 40px;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+border-bottom: 1px solid var(--Dark-12, #1C1C21);
 }
 .Portfolio-text-container {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+flex: 1 0 0;
 }
 .P {
+  color: var(--Grey-50, #797C86);
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
 }
 .Portfolio-title {
+  color: var(--Absolute-White, #FFF);
+font-size: 48px;
+font-weight: 600;
+text-transform: uppercase;
 }
-.cartbtn {
+
+.button-container-comp-p {
+  display: flex;
+align-items: center;
+gap: 20px;
 }
-.cartbtn-title {
+.buttonst-container-comp-p {
+  display: flex;
+padding: 8px;
+justify-content: flex-end;
+align-items: center;
+gap: 12px;
+border-radius: 100px;
+border: 1px solid var(--Dark-12, #1C1C21);
+background: var(--Dark-03, #070708);
+}
+.btn-c-p {
+display: flex;
+padding: 10px;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+border: 1px solid #2F2F37;
+background: var(--Dark-12, #1C1C21);
+}
+.icon-brands-c-p {
+ width: 28px;
+height: 28px;
+
+}
+.bnyg-p {
+  display: flex;
+padding: 14px 20px;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid #2F2F37;
+background: var(--Dark-12, #1C1C21);
+}
+.bnyg-text-p {
+
+color: var(--Absolute-White, #FFF);
+
+font-size: 14px;
+
+line-height: 21px; /* 21px */
 }
 .Portfolio-imge-button {
+ display: flex;
+align-items: flex-start;
+gap: 30px;
+align-self: stretch;
 }
 .Portfolio-imge {
 }
-.Portfolio-imge-list {
+.Portfolio-imge-list { 
+  display: flex;
+align-items: flex-start;
+gap: 30px;
+align-self: stretch;
 }
 .Portfolio-imge-list-item {
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    flex: 1 0 0;
 }
+
 .Portfolio-img-ch {
+ width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
 }
 .card-container-btn {
 }
@@ -1978,12 +2077,7 @@ height: 28px;}
 }
 .card-sv {
 }
-.button-container-Portfolio {
-}
-.btn-P {
-}
-.icon-brands-P {
-}
+
 }
 @media (min-width:1920px){
 .Portfolio {
