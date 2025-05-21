@@ -1,0 +1,41 @@
+body{
+    background-color:#070708 ;
+}
+
+.main-content{
+    border-top: 1px solid var(--Dark-12, #1C1C21);
+}
+
+.main-content-title{
+    color: var(--Grey-50, #797C86);
+}
+
+.button-view{
+    border-bottom: 1px solid var(--Dark-20, #2F2F37);
+}
+
+.button-view-title{
+     color: var(--Grey-95, #F2F2F3);
+}
+
+.arrow{
+    background-color: transparent;
+}
+
+.gallerea-list-item-date{
+    color: var(--Grey-50, #797C86);
+}
+
+.main-content-button-arrows{
+    border: 1px solid var(--Dark-12, #1C1C21);
+background: var(--Dark-03, #070708);
+}
+
+.main-content-button{
+    border: 1px solid #2F2F37;
+background: var(--Dark-12, #1C1C21);
+}
+
+.gallerea-list-item-title{
+    color: var(--Grey-80, #CACACE);
+}
