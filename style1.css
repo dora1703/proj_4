@@ -238,16 +238,7 @@ font-weight: 600;
 text-transform: uppercase;
 
 }
-.element::after{
-  content:"";
- display: flex;
-width: 346px;
-height: 346px;
-fill: var(--Dark-06, #0E0E10);
-stroke-width: 1px;
-stroke: var(--Dark-12, #1C1C21);
-background-image: url("path/to/Vector.element.svg");
-}
+
 .container-together{
   display: flex;
 flex-direction: column;
@@ -374,16 +365,64 @@ font-size: 14px;
 line-height: 21px; 
 text-transform: uppercase;
 }
-.gallery{
+/*.gallery{
     margin: 0 auto;
   display: flex;
-  padding: 0px 16px;
+  
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+}*/
+.gallery {
+padding: 0px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
+.gallery > div {
+  box-sizing: border-box;
+  max-width: calc(33.333% - 16px);
+  text-align: center;
+}
+.gallery-item1{
+width: 116.64px;
+
+}
+.gallery-item2{
+  width: 146.47px;
+
+left: 121.13px;
+border-radius: 10px;
+
+
+}
+.gallery-item4{
+  width: 87.48px;
+left: 270.52px;
+border-radius: 10px;
+
+
+}
+.gallery-item3{
+
+}
+.gallery-item5 {
+
+}
+.gallery-item6 img{
+width: 38.13px;
+height: 62.28px;
+top: 160.72px;
+
+border-radius: 10px;
+
+}
 @media (min-width:1440px){
   .HERO {
  
@@ -519,9 +558,46 @@ font-size: 14px;
 line-height: 21px; 
 text-transform: uppercase;
   }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 80px;
+}
 
+.gallery > div {
+  flex: 0 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.gallery-item6 img{
+width: 136.341px;
+height: 118.422px;
+
+}
+.gallery-item3 img{
+  width: 462.757px;
+height: 293.156px;
+flex-shrink: 0;
+}
+.gallery-item5 img{
+  width: 312.782px;
+height: 169.766px;
+flex-shrink: 0;
+}
 
 }
 @media (min-width:1920px){
@@ -639,25 +715,37 @@ height: 30px;
   .icon-list-item-text {
 
   }
- .gallery {
- display: flex;
-padding: 0px 80px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-align-self: stretch;
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 80px;
 }
 
-.gallery-item {
- flex-shrink: 0;
+.gallery > div {
+  flex: 0 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
-  border-radius: 16px;
+  border-radius: 12px;
 }
-
-
+.gallery-item6 img{
+  width: 170px;
+height: 143px;
+flex-shrink: 0;
+}
  
 }
 .Info {
@@ -2878,6 +2966,7 @@ border-bottom: 1px solid var(--Dark-20, #2F2F37);
   height: 14px;
 }
 .button-vat {
+  
   width: 193px;
   height: 49px;
   color: #fff;
