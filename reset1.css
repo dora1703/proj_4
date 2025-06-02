@@ -38,6 +38,7 @@ time, mark, audio, video {
 img, svg{
     display: block;
     height: auto;
+    max-width: 100%;
 }
     ul,ol{
         list-style: none;
